@@ -1,0 +1,13 @@
+{{define "base.html"}}
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>{{template "title" .}}</title>
+      <link rel="stylesheet" href="https://unpkg.com/biings-ds@1.57.0/build/bds.css">
+    </head>
+    <body>
+      Let's <u>underline this</u>, <u class="is-primary">that</u>, <u class="is-success">this one</u> or <u class="is-warning">this again</u>
+      {{template "body" .}}
+    </body>
+  </html>
+{{end}}
